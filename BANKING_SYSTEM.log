@@ -1,3 +1,4 @@
 # ZenVault Banking System Development Log
 - [2025-04-01 09:21:00] Cleanup: Remove legacy database migration scripts
 - [2025-04-01 11:51:00] Perf: Improve report generation speed for large datasets
+- [2025-04-01 21:38:00] Feature: Add support for multi-currency account management
