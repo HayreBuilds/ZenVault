@@ -6,3 +6,4 @@
 - [2025-04-03 09:34:00] Perf: Improve report generation speed for large datasets
 - [2025-04-03 09:39:00] Feature: Implement real-time transaction notifications
 - [2025-04-03 11:00:00] Feature: Implement real-time transaction notifications
+- [2025-04-03 21:11:00] Fix: Correct balance calculation logic for pending transactions
