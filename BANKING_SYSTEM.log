@@ -12,3 +12,4 @@
 - [2025-04-04 17:31:00] Perf: Improve report generation speed for large datasets
 - [2025-04-07 17:41:00] Refactor: Centralize security configuration and JWT handling
 - [2025-04-07 20:59:00] UI: Develop comprehensive admin dashboard for account management
+- [2025-04-08 12:25:00] Bugfix: Fix data validation edge cases in client registration
