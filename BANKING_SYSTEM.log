@@ -36,3 +36,4 @@
 - [2025-04-24 18:54:00] Update: Refresh Maven dependencies to latest stable versions
 - [2025-04-24 21:12:00] Feat: Integrate automated daily backup system
 - [2025-04-28 12:09:00] Docs: Add comprehensive setup guide for Java/Swing environment
+- [2025-04-29 13:36:00] Refactor: Centralize security configuration and JWT handling
