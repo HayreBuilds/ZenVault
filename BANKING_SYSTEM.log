@@ -49,3 +49,4 @@
 - [2025-05-05 18:09:00] Refactor: Centralize security configuration and JWT handling
 - [2025-05-05 18:33:00] Fix: Resolve concurrency issues in transaction processing
 - [2025-05-07 12:35:00] UI: Enhance accessibility features for the client portal
+- [2025-05-07 17:52:00] Feature: Add support for multi-currency account management
