@@ -1,0 +1,38 @@
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.restore
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# IntelliJ IDEA
+.idea/
+*.iml
+out/
+gen/
+
+# VS Code
+.vscode/
+
+# Local data files
+*.dat
+*.txt
+!README.md
+!pom.xml
+
+# macOS
+.DS_Store
+
+# Statements (App generated)
+statements/
