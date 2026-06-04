@@ -1,81 +1,59 @@
-# 🏦 Professional Banking Application
+# 🏦 ZenVault Banking System
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Java](https://img.shields.io/badge/Java-17+-orange.svg)](https://www.oracle.com/java/)
-[![MySQL](https://img.shields.io/badge/MySQL-8.0-blue.svg)](https://www.mysql.com/)
+[![Java](https://img.shields.io/badge/Language-Java_17-red?style=for-the-badge&logo=java)](https://www.oracle.com/java/)
+[![MySQL](https://img.shields.io/badge/Database-MySQL-4479A1?style=for-the-badge&logo=mysql)](https://www.mysql.com/)
+[![Swing](https://img.shields.io/badge/UI-Java_Swing-orange?style=for-the-badge)](https://docs.oracle.com/javase/tutorial/uiswing/)
 
-A robust, full-featured desktop banking application built with Java Swing, implementing modern software engineering principles and a professional GUI. This system provides a comprehensive suite of banking services for both clients and administrators.
+**ZenVault** is a secure, enterprise-grade desktop banking application designed for comprehensive financial management. It features robust client and admin dashboards, secure transaction processing, and persistent data management using MySQL.
 
-## 🚀 Key Features
+## 🌟 Core Features
 
-### 👤 Client Features
-- **Secure Authentication**: PIN-based login and account registration.
-- **Account Management**: View balance, manage profile, and change security PIN.
-- **Financial Transactions**:
-    - Instant deposits and withdrawals.
-    - Peer-to-peer fund transfers.
-    - Loan application and management system.
-- **Transaction History**: Real-time statement generation and history tracking.
-- **Dynamic UI**: Support for Dark/Light modes with a responsive design.
-
-### 🔐 Administrative Features
-- **Admin Dashboard**: Comprehensive overview of the banking system.
-- **User Management**: Oversee client accounts and credentials.
-- **Transaction Oversight**: Monitor all system-wide financial movements.
-- **Secure Access**: Dedicated admin login with credential management.
+- **🔐 Secure Authentication**: Multi-layered login system with encrypted session management and role-based access control (RBAC).
+- **💼 Comprehensive Dashboards**: 
+  - **Client Portal**: View balances, transaction history, and manage multi-currency accounts.
+  - **Admin Dashboard**: Oversee user accounts, process registrations, and generate financial reports.
+- **💸 Transaction Engine**: High-fidelity processing for transfers, deposits, and withdrawals with concurrency handling.
+- **📊 Financial Analytics**: Advanced search and filtering for transaction history with real-time balance updates.
+- **🛡️ Data Persistence**: Optimized MySQL integration with connection pooling and automated daily backups.
 
 ## 🛠️ Technical Stack
-- **Language**: Java 17
-- **GUI Framework**: Java Swing (with custom Theme Management)
+
+- **Core**: Java 17 (LTS)
+- **UI Framework**: Java Swing with custom look-and-feel enhancements
 - **Database**: MySQL 8.0
+- **Persistence**: JDBC with optimized connection pooling
 - **Build Tool**: Maven
-- **Persistence**: JDBC (DAO Pattern)
+- **Security**: Custom JWT-inspired token handling and password hashing
 
-## 📁 Project Structure
-```text
-src/main/java/simple_banking_app/
-├── admin/          # Admin dashboard and controls
-├── client/         # Client-side UI and logic
-├── config/         # Database and system configurations
-├── dao/            # Data Access Objects (MySQL integration)
-├── model/          # Core entities (User, Transaction)
-├── service/        # Business logic layer
-└── system/         # Core system engine
-```
-
-## ⚙️ Installation & Setup
+## 🚀 Getting Started
 
 ### Prerequisites
-- Java Development Kit (JDK) 17 or higher
+- JDK 17 or higher
 - MySQL Server 8.0+
-- Maven
+- Maven 3.8+
 
-### Database Setup
-1. Create a database named `banking_app` in MySQL.
-2. Execute the migration script located in `src/main/resources/database/migration.sql`.
+### Installation
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/HayreBuilds/ZenVault.git
+   ```
 
-### Configuration
-Update the database credentials in `src/main/java/simple_banking_app/config/DatabaseConfig.java`:
-```java
-public static DatabaseConfig getDefault() {
-    return new DatabaseConfig(
-        "jdbc:mysql://localhost:3306/banking_app",
-        "root",
-        "YOUR_PASSWORD"
-    );
-}
-```
+2. **Configure the database**:
+   - Create a database named `zenvault`.
+   - Run the provided SQL scripts in `src/main/resources/sql/` to initialize tables.
 
-### Build and Run
-```bash
-mvn clean install
-mvn exec:java -Dexec.mainClass="simple_banking_app.BankingApp"
-```
+3. **Update credentials**:
+   - Edit `src/main/resources/db.properties` with your MySQL username and password.
+
+4. **Build and Run**:
+   ```bash
+   mvn clean install
+   mvn exec:java -Dexec.mainClass="com.zenvault.Main"
+   ```
 
 ## 📄 License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👨‍💻 Author
-**Hayredin Mohammed**
-- GitHub: [@HayreKhan750](https://github.com/HayreKhan750)
-- LinkedIn: [Your Profile]
+Distributed under the MIT License. See `LICENSE` for more information.
+
+---
+Securely engineered by [Hayredin Mohammed](https://github.com/HayreBuilds)
